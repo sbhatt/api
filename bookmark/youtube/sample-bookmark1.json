@@ -1,0 +1,7 @@
+{
+  "id": "sample-bookmark1",
+  "name": "Sample Bookmark demo1",
+  "description": "Description1 for sample bookmark demo.",
+  "link": "https://www.youtube.com/watch?v=p0O1VVqRSK0",
+  "tags": "tag1,tag2"
+}
