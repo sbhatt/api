@@ -1,7 +1,6 @@
 {
   "id": "sample-bookmark",
-  "name": "Sample Bookmark demo",
-  "description": "Description for sample bookmark demo.",
-  "link": "https://www.youtube.com/watch?v=d9WtSgaqi9Y",
-  "tags": "tag1"
+  "videoId":"d9WtSgaqi9Y",
+  "description": "This is sample youtube video bookmark",
+  "tags": ["tag1"]
 }

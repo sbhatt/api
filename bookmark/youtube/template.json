@@ -1,7 +1,6 @@
 {
   "id": "template",
-  "name": "Name of youtube bookmark",
+  "videoId":"Video Id",
   "description": "description why it should be",
-  "link": "youtube video link",
-  "tags": ""
+  "tags": ["tag1","tag2"]
 }
