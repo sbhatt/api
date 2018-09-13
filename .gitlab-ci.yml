@@ -5,4 +5,7 @@ build:
   image: node:latest
   script:
     - node .
+    - git config --global user.email "sharvan.bhatt@gmail.com"
+    - git config --global user.name "Sharvan Bhatt"
+    - git clone https://github.com/sbhatt/home.git
     - git commit -m "API Index file update" *
