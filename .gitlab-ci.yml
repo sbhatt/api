@@ -9,7 +9,7 @@ build:
     - node .
   artifacts:
     paths:
-      - /
+      - /bookmark
 
 deploy:
   stage: deploy
@@ -24,7 +24,7 @@ deploy:
    - git rm -r -f *
    - cd ..
    - cd ..
-   - cp -r /* .deploy/api-pub
+   - cp -r /bookmark/* .deploy/api-pub/bookmark
    - cd .deploy/api-pub/
    - git status
    - git add -A
