@@ -1,6 +1,5 @@
 {
   "id": "template",
-  "videoId":"Video Id",
   "description": "description why it should be",
-  "tags": ["tag1","tag2"]
+  "tags": "tag1, tag2, tag3"
 }
