@@ -1,5 +1,6 @@
 {
   "id": "template",
+  "title":"title",
   "description": "description why it should be",
   "tags": "tag1, tag2, tag3"
 }
