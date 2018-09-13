@@ -24,7 +24,7 @@ deploy:
    - git rm -r -f *
    - cd ..
    - cd ..
-   - cp -r bookmark/* .deploy/api-pub/bookmark
+   - cp -r bookmark .deploy/api-pub
    - cd .deploy/api-pub/
    - git status
    - git add -A
