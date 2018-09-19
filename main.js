@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-var DIR_TO_COLLATE = ['./bookmark/youtube'];
+var DIR_TO_COLLATE = ['./bookmark/youtube','./bookmark/web'];
 
 function isValidJSONString(str) {
     try {
@@ -36,5 +36,8 @@ function collateJSON(dir){
   fs.writeFileSync(dir+'/error.json',JSON.stringify(errorFiles));
 }
 
+for(var i =0; i<DIR_TO_COLLATE.length;i++){
+  console.log('Collating :: '+DIR_TO_COLLATE[i]);
+  collateJSON(DIR_TO_COLLATE[i]);
 
-collateJSON(DIR_TO_COLLATE[0]);
+}
