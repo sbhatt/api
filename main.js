@@ -29,7 +29,9 @@ function collateJSON(dir){
       errorFiles.push(filePath);
       continue;
     }
-    data.push(JSON.parse(fileContent));
+    var jsonData = JSON.parse(fileContent);
+    jsonData.fileId = fileName;
+    data.push(jsonData);
   }
 
   fs.writeFileSync(dir+'/index.json',JSON.stringify(data));
