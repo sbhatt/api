@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-var DIR_TO_COLLATE = ['.v1/bookmarks/youtube','./v1/bookmarks/web'];
+var DIR_TO_COLLATE = ['./v1/bookmarks/youtube','./v1/bookmarks/web'];
 
 function isValidJSONString(str) {
     try {
