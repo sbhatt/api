@@ -9,7 +9,7 @@ build:
     - node .
   artifacts:
     paths:
-      - bookmark
+      - v1
 
 deploy:
   stage: deploy
@@ -19,17 +19,16 @@ deploy:
    - cd .deploy
    - git config --global user.email "sharvan.bhatt@gmail.com"
    - git config --global user.name "Sharvan Bhatt"
-   - git clone https://github.com/sbhatt/api-pub.git
-   - cd api-pub
+   - git clone https://github.com/sbhatt/api-prd.git
+   - cd api-prd
    - git rm -r -f *
    - cd ..
    - cd ..
-   - cp -r bookmark .deploy/api-pub
-   - cd .deploy/api-pub/
+   - cp -r v1 .deploy/api-prd
+   - cd .deploy/api-prd/
    - git status
    - git add -A
    - git commit -m "updated Index.json" *
    - git status
-   - echo $GITHUB_DEV_KEY
-   - git push https://sbhatt:$GITHUB_DEV_KEY@github.com/sbhatt/api-pub.git master
+   - git push https://sbhatt:$GITHUB_DEV_KEY@github.com/sbhatt/api-prd.git master
    - git status
